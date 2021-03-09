@@ -1,0 +1,180 @@
+.about {
+  padding-top: 100px;
+  max-width: 980px;
+
+  margin: 0 auto;
+
+  .about-top-section {
+    h1 {
+      font-family: proximaFont;
+      font-size: 60px;
+      font-weight: normal;
+      border-bottom-style: solid;
+      border-bottom-width: 3px;
+      border-bottom-color: black;
+      letter-spacing: 3px;
+      width: 171px;
+    }
+    p {
+      font-family: Gill;
+      font-size: 16px;
+      letter-spacing: 2px;
+    }
+  }
+
+  .about-bottom-section {
+    margin-top: 100px;
+    h3 {
+      font-size: 40px;
+      font-family: proximaFont;
+      font-weight: normal;
+      border-bottom-style: solid;
+      border-bottom-width: 3px;
+      border-bottom-color: black;
+      letter-spacing: 3px;
+      width: 255px;
+    }
+
+    .client {
+      max-width: 676px;
+      min-height: 150px;
+      display: flex;
+      margin-bottom: 55px;
+
+      .client-image {
+        width: 260px;
+        height: 150px;
+      }
+
+      .client-1 {
+        background-image: url(../images/about-client-01.jpg);
+        background-size: cover;
+        background-repeat: none;
+        background-position: center;
+      }
+
+      .client-2 {
+        background-image: url(../images/about-client-02.jpg);
+        background-size: cover;
+        background-repeat: none;
+        background-position: center;
+      }
+
+      .client-quote {
+        position: relative;
+        //background-color: blue;
+        min-height: 50px;
+        width: 385px;
+        padding-left: 25px;
+
+        p {
+          font-family: gill;
+          font-size: 16px;
+          font-style: italic;
+          letter-spacing: 1.5px;
+        }
+
+        .client-name {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          font-family: proximaFont;
+          font-size: 20px;
+          color: $site-blue;
+        }
+      }
+    }
+  }
+}
+
+.spacer {
+  height: 179px;
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+    margin-top: 30px;
+    padding: 15px;
+    .about-top-section {
+      p {
+        text-align: left !important;
+      }
+    }
+    .about-bottom-section {
+      .client-quote {
+        p {
+          font-size: 13px !important;
+          text-align: left !important;
+        }
+      }
+    }
+  }
+}
+
+///*nav bar*///
+
+.alt-nav {
+  width: 980px;
+  height: 100px;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+
+  .logo {
+    width: 92px;
+    height: 42px;
+    background-image: url(../images/logo/logo-black.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .links {
+    display: flex;
+    width: 532px;
+    height: 42px;
+    padding-top: 26px;
+    font-family: gill;
+    font-size: 15px;
+    justify-content: space-between;
+    letter-spacing: 1.25px;
+  }
+
+  div {
+    &.pipe {
+      background-color: $site-blue;
+      height: 21px;
+      width: 2px;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      margin: 0 auto;
+      font-size: 15px;
+      font-family: gill;
+    }
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .alt-nav {
+    width: 532px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  .logo {
+    margin-top: 40px;
+  }
+
+  .links {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
